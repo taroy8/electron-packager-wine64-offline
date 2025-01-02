@@ -1,2 +1,8 @@
-# electron-packager-wine64-offline
-electron-packager for offline packaging of win32 x64 applications on a linux Docker image
+# electron-packager
+Dockerfile for electron-packager.
+
+
+# usage
+```
+docker run -it --rm -v `pwd`:/electron -v `pwd`/cache:/root/.electron renyufu/electron-packager . --platform win32 --arch x64 --overwrite
+```
